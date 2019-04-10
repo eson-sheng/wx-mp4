@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/list/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "音乐播放",
+    "navigationBarTextStyle":"black"
+  },  
+  "tabBar": {
+    "selectedColor": "#FF5733",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的音乐",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home_on.png"
+      },
+      {
+        "pagePath": "pages/list/index",
+        "text": "音乐列表",
+        "iconPath": "img/list.png",
+        "selectedIconPath": "img/list_on.png"
+      }
+    ]
+  }
+}
