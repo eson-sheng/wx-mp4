@@ -1,0 +1,4 @@
+/* pages/play/index.wxss */
+.main video{
+  width: 100%;
+}

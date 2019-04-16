@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/list/index",
+    "pages/play/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "媒体播放",
+    "navigationBarTextStyle":"black"
+  },  
+  "tabBar": {
+    "selectedColor": "#FF5733",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的媒体",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home_on.png"
+      },
+      {
+        "pagePath": "pages/list/index",
+        "text": "媒体列表",
+        "iconPath": "img/list.png",
+        "selectedIconPath": "img/list_on.png"
+      }
+    ]
+  }
+}

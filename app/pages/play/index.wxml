@@ -1,0 +1,4 @@
+<!--pages/play/index.wxml-->
+<view class="main">
+  <video src="{{src}}" controls></video>
+</view>

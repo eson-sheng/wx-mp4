@@ -1,0 +1,33 @@
+/* pages/list/index.wxss */
+.items-list{
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  height: 210rpx;
+}
+.pro-logo{
+  float: left;
+  width:300rpx;
+  height:200rpx;
+}
+.pro-body{
+  margin-top: 5rpx;
+  margin-left: 320rpx;
+}
+.pro-title{
+  padding-top: 5rpx;
+  height: 110rpx;
+  color:#212121;
+  font-size: 34rpx;
+  line-height: 1.5rem;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}
+.pro-desc{
+  font-size: 24rpx;
+  color:#9a9a9a;
+  line-height: 1.2rem;
+  display: block;
+}

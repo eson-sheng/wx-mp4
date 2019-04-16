@@ -1,0 +1,9 @@
+.idea
+composer.lock
+*.log
+# thinkphp
+
+/application/local_database.php
+/application/local_config.php
+/public/upload_video/
+/public/upload_video_img/

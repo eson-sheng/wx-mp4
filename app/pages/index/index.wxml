@@ -1,0 +1,47 @@
+<!--index.wxml-->
+
+<!-- 轮播图推荐 -->
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  indicator-color="{{indicatorColor}}"
+  indicator-active-color="{{indicatorActiveColor}}"
+  autoplay="{{autoplay}}" 
+  circular="{{circular}}" 
+  vertical="{{vertical}}"
+  interval="{{interval}}" 
+  duration="{{duration}}" 
+  previous-margin="{{previousMargin}}px" 
+  next-margin="{{nextMargin}}px"
+  >
+  <block wx:for="{{imgUrls}}" wx:key="*this">
+    <swiper-item>
+      <view data-href="{{item.href}}" bindtap="toHref">
+        <image src="{{item.img}}" class="slide-image" />
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 登录显示 -->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">{{motto}}</button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+<!-- 推荐列表 -->
+  <view wx:if="{{hasUserInfo}}" class="container" >
+    <button bindtap="uploadVideo">上传视频</button>
+  </view>
+
+  <view wx:if="{{hasUserInfo}}" class="tui-menu-list">
+    <progress percent="{{progress}}" show-info/>
+  </view>
+
+  <view wx:if="{{hasUserInfo}}" class="container">
+    <button bindtap="abort">取消</button>
+  </view>
