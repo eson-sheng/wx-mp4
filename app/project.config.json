@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -13,7 +13,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "wxf609a87f425c8f37",
+	"appid": "wxd006acd839f07332",
 	"projectname": "mp4-player",
 	"debugOptions": {
 		"hidedInDevtools": []

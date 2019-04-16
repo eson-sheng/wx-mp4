@@ -108,7 +108,24 @@ Page({
             author: app.globalData.userInfo.nickName
           },
           success(res) {
-            console.log(res);
+            var json = JSON.parse(res.data);
+            console.log(json);
+            if (json.status) {
+              wx.showToast({
+                title: '成功',
+                icon: 'success',
+                duration: 2000
+              })
+            } else {
+              wx.showToast({
+                title: '失败',
+                icon: 'success',
+                duration: 2000
+              })
+            }
+            self.setData({
+              progress: 0,
+            })
           }
         })
 

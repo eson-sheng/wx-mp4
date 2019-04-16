@@ -1,5 +1,5 @@
 <!--pages/list/index.wxml-->
-<view-item wx:for="{{dataList}}" wx:key="*this">
+<view-item wx:for="{{dataList}}">
   <view class="items-list" bindtap="toDetail" data-item="{{item}}">
     <image class="pro-logo" src="{{host}}{{item.img}}"></image>
     <view class="pro-body">
