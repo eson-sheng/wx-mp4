@@ -69,21 +69,23 @@ Page({
   },
   getUserInfo: function (e) {
     console.log(e)
-    wx.login({
-      success(res) {
-        if (res.code) {
-          // 发起网络请求
-          console.log(res);
-        } else {
-          console.log('登录失败！' + res.errMsg)
+    if (e.detail.rawData) {
+      wx.login({
+        success(res) {
+          if (res.code) {
+            // 发起网络请求
+            console.log(res);
+          } else {
+            console.log('登录失败！' + res.errMsg)
+          }
         }
-      }
-    })
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+      })
+      app.globalData.userInfo = e.detail.userInfo
+      this.setData({
+        userInfo: e.detail.userInfo,
+        hasUserInfo: true
+      })
+    }
   },
   toHref: function(e){
     console.log(e.currentTarget.dataset.href);
